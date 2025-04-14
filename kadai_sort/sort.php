@@ -9,30 +9,31 @@
 <body>
     <p>
         <?php
-        function sort_2way($order){
-            //ソートする配列を宣言
-            $nums=[15,4,18,23,10];
+        function sort_2way($array, $order){
+            
 
             if($order===true){
             echo '昇順にソートします。'.'<br>';
 
-                sort($nums);
-                foreach($nums as $num){
+                sort($array);
+                foreach($array as $num){
                     echo $num.'<br>';
                 }
             }
 
             if($order===false){
                 echo '降順にソートします。'.'<br>';
-                rsort($nums);
-                foreach($nums as $num){
+                rsort($array);
+                foreach($array as $num){
                     echo $num.'<br>';
                 }
             }
         }
+        
+        $nums=[15,4,18,23,10];
 
-        sort_2way(true);
-        sort_2way(false);
+        sort_2way($nums, true);
+        sort_2way($nums, false);
         ?>
     </p>
 </body>
