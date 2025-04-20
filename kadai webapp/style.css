@@ -1,0 +1,34 @@
+body {
+    background-color: lightpink;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* 縦並び */
+    align-items: center;/* 横方向の中央揃え */
+    margin-top: 30px;
+
+}
+
+form {
+    width: 50%;
+    max-width: 500px; /* 最大幅を固定 */
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;     /* フレックスボックスにする */
+    flex-direction: column; /* 縦並び */
+    align-items: center;  /* 横方向の中央揃え */
+
+
+}
+
+form input[type="submit"] {
+    width: auto; /* ボタンの幅を自動調整 */
+    margin-top: 20px; /* ボタンと入力欄の間にスペースを追加 */
+}
+
+form td {
+    padding: 10px 20px;
+  }
